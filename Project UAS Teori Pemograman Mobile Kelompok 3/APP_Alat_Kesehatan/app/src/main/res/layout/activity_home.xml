@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Activity.act_home">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.myapplication.widget.wgt_search
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/bg_form_cari"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@drawable/ic_search"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Cari Produk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.example.myapplication.widget.wgt_search>
+    </androidx.appcompat.widget.Toolbar>
+    <include layout="@layout/_ly_kategori"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
